@@ -1,0 +1,174 @@
+/*****************************
+    GENERAL
+*****************************/
+
+:root {
+    --grey: #eaeaea;
+    --light-grey: #f1f1f1;
+}
+
+body {
+    background: linear-gradient(#009688 10%, #d3dbda 0%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 2.5vh 0;
+}
+
+.main-container {
+    height: 95vh;
+    background: #FFF;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.font_small {
+    font-size: 0.75rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.c_grey {
+    color: #b1b1b1;
+}
+
+.c_dark-grey {
+    color: #6b7376;
+}
+
+.bg_grey {
+    background-color: var(--grey);
+}
+
+.bg_light-grey {
+    background-color: var(--light-grey);
+}
+
+/*****************************
+    ASIDE
+*****************************/
+
+aside {
+    border-right: 1px solid rgb(219, 216, 216);
+}
+
+.notifications {
+    background-color: #8edafc;
+}
+
+.not__bell {
+    color: #8edafc;
+}
+
+.notifications .font_small {
+    color: #38768e;
+}
+
+.search_btn,
+.search-chat input {
+    border: 1px solid var(--grey);
+}
+
+.msg_wrapper {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.last_msg {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*****************************
+    MAIN
+*****************************/
+
+header {
+    flex-basis: 0;
+}
+
+main {
+    background-image: url('../img/mine.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: transparent;
+    height: 100%;
+}
+
+.chat-container {
+    overflow: auto;
+    height: calc(100% - 200px);
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.chat-container.my_p {
+    padding: 2rem 1rem 1rem 2.5rem;
+}
+
+.def-img {
+    background-color: #FFF;
+    height: 100%;
+}
+
+.def-img img {
+    width: 50%;
+}
+
+.chat-card {
+    max-width: 40%;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.msg {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-card.sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+.chat-input {
+    flex-basis: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(234, 234, 234, 0.9)
+}
+
+.chat-input input {
+    flex-grow: 1;
+    margin: 0 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/*****************************
+    DEBUG 
+*****************************/
+
+.debug .main-container {
+    border: 1px solid black;
+}
+
+.debug .col-4 {
+    background-color: yellow;
+}
+
+.debug .col-8 {
+    background-color: blue;
+}
